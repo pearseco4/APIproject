@@ -1,4 +1,4 @@
-import db from "./db/connection.js";
+import db from "./db/connection";
 // import routes from "./routes/index.js";
 import express from "express";
 import cors from "cors";

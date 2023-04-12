@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node server.js",
+    "db:seed": "node --experimental-modules seed/data.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +23,7 @@
   "devDependencies": {
     "nodemon": "^2.0.22"
   },
-  "type": "module",
-  "start": "node server.js",
-  "Db:seed": "node --experimental-json modules seed/data",
-  "dev": "nodemon server.js"
+
+  "type": "module"
+
 }
