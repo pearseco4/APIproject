@@ -1,5 +1,5 @@
-import db from "./db/connection";
-// import routes from "./routes/index.js";
+import db from "./db/connection.js";
+import routes from "./routes/index.js";
 import express from "express";
 import cors from "cors";
 import logger from "morgan";
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000
 app.use(express.json());
 app.use(cors());
 app.use(logger("dev"));
-// app.use("/", routes);
+app.use("/", routes);
 
 //listen for connected event
 db.on('Connected', () => {
