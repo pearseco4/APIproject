@@ -1,82 +1,72 @@
 [
     {
-        "id": 259844,
         "title": "Whisper Like a Magnet",
         "date_display": "2020",
-        "artist_display": "Sophia Narrett (American, b. 1987)",
+        "artist": "Sophia Narrett",
         "img":"https://images.squarespace-cdn.com/content/v1/51a3f7cae4b0cf20ca0aac1c/1605854060773-C1ZXQ1PX7MEDMNQLV9IP/narrett_whisper_10951_detail6.jpg?format=2500w"
     },
 
     {
-        "id": 9505,
         "title": "Two Studies of a Roma Woman and a Roma Boy in a Large Hat",
         "date_display": "c. 1605",
-        "artist_display": "Jacques de Gheyn II\nDutch, 1565-1629", 
+        "artist": "Jacques de Gheyn II", 
         "img":"https://www.artic.edu/iiif/2/9484feef-7c7f-e70f-4d5e-4320ece4bfd1/full/1686,/0/default.jpg"
     },
     
     {
-        "id": 3752,
         "title": "The Madonna of the Rosary",
         "date_display": "c. 1480",
-        "artist_display": "Israhel van Meckenem the Younger\nGerman, c. 1440/45-1503", 
+        "artist": "Israhel van Meckenem the Younger", 
         "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Michelangelo_Merisi%2C_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg/1024px-Michelangelo_Merisi%2C_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg"
     },
 
     {
-        "id": 129884,
         "title": "Starry Night and the Astronauts",
         "date_display": "1972",
-        "artist_display": "Alma Thomas\nAmerican, 1891–1978", 
+        "artist": "Alma Thomas", 
         "img":"https://www.artic.edu/iiif/2/e966799b-97ee-1cc6-bd2f-a94b4b8bb8f9/full/843,/0/default.jpg"
     },
 
 
     {
-        "id": 40351,
         "title": "The Five Foxes",
         "date_display": "c. 1490",
-        "artist_display": "Israhel van Meckenem the Younger\nGerman, c. 1440/45-1503", 
+        "artist": "Israhel van Meckenem the Younger", 
         "img":"https://www.artic.edu/iiif/2/248dbe62-484f-bf62-52ef-f2e999c3728b/full/1686,/0/default.jpg"
     },
 
     {
-        "id": 27009,
         "title": "Ornament with the Tree of Jesse",
         "date_display": "1480–90",
-        "artist_display": "Israhel van Meckenem the Younger\nGerman, c. 1440/45-1503", 
+        "artist": "Israhel van Meckenem the Younger", 
         "img":"https://www.artic.edu/iiif/2/d001c1e1-efa0-a58e-7269-f1f590d2bbe0/full/1686,/0/default.jpg"
     },
 
     {
-        "id": 3816,
         "title": "Ornamental Panel With Two Lovers",
         "date_display": "1480–90",
-        "artist_display": "Israhel van Meckenem the Younger\nGerman, c. 1440/45-1503", 
+        "artist": "Israhel van Meckenem the Younger", 
         "img":"https://www.artic.edu/iiif/2/763257c8-fbf9-0377-54ab-ae3cee7ff7a4/full/1686,/0/default.jpg"
     },
 
     {
-        "id": 86265,
         "title": "St. Luke Portraying the Madonna",
         "date_display": "1490–1500",
-        "artist_display": "Israhel van Meckenem the Younger\nGerman, c. 1440/45-1503", 
+        "artist": "Israhel van Meckenem the Younger", 
         "img":"https://www.artic.edu/iiif/2/08818a6c-4564-d136-251c-742b58f996be/full/843,/0/default.jpg"
     },
 
     {
-        "id": 61073,
         "title": "Jeanne Bécu, Comtesse Du Barry, and her servant Zamor",
         "date_display": "1771",
-        "artist_display": "Jean-Baptiste-André Gautier D'Agoty\nFrench, 1740-1786", 
+        "artist": "Jean-Baptiste-André Gautier D'Agoty", 
         "img":"https://www.artic.edu/iiif/2/b51cc770-0d06-12fe-5a7a-b303aad551d0/full/843,/0/default.jpg"
     },
 
     {
-        "id": 264640,
         "title": "Moon Meet May",
         "date_display": "1993",
-        "artist_display": "Barbara Rossi\nAmerican, born 1940",
+        "artist": "Barbara Rossi",
         "img":"https://d7hftxdivxxvm.cloudfront.net/?height=800&quality=80&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FVOvrl3qWixG3sCmoPimQIA%2Fnormalized.jpg&width=800"
     }
 ]

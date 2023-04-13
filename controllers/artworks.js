@@ -1,54 +1,72 @@
 import Artworks from "../models/Artworks.js";
 
-export const getCharacters = async (req, res) => {
+export const getArtworks = async (req, res) => {
   try {
     const artworks = await Artworks.find();
-    res.json(characters);
+    res.json(artworks);
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ error: error.message });
   }
 };
 
-export const getCharacter = async (req, res) => {
+export const getArtwork = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { title } = req.params;
 
-    const artworks = await Artworks.findById(id);
-    res.json(character);
+    const artworks = await Artworks.findOne( {"title":title} );
+    res.json(artworks);
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ error: error.message });
   }
 };
 
-export const createCharacter = async (req, res) => {
+export const getArtist = async (req, res) => {
   try {
-    const character = new Artworks(req.body);
-    await character.save();
-    res.status(201).json(character);
+    const { name } = req.params;
+
+    const artworks = await Artworks.find({"artist":name});
+    res.json(artworks);
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ error: error.message });
   }
 };
 
-export const updateCharacter = async (req, res) => {
-  const { id } = req.params;
-  const character = await Artworks.findByIdAndUpdate(id, req.body);
-  res.status(200).json(character);
+
+export const createArtwork = async (req, res) => {
+  try {
+    const artwork = new Artworks(req.body);
+    await artwork.save();
+    res.status(201).json(artwork);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ error: error.message });
+  }
 };
 
-export const deleteCharacter = async (req, res) => {
+export const updateArtwork = async (req, res) => {
   try {
-    const { id } = req.params;
-    const deleted = await Artworks.findByIdAndDelete(id);
+  const { title } = req.params;
+  const artwork = await Artworks.findOneAndUpdate({"title":title}, req.body);
+  res.status(200).json(artwork);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const deleteArtwork = async (req, res) => {
+  try {
+    const { title } = req.params;
+    const deleted = await Artworks.findOneAndDelete({"title":title});
 
     if (deleted) {
-      return res.status(200).send("Character Deleted!");
+      return res.status(200).send("Artwork Deleted!");
     }
 
-    throw new Error("Character not found");
+    throw new Error("Artwork not found");
   } catch (error) {
     console.log(error.message);
     res.status(500).json({ error: error.message });

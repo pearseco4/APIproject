@@ -24,4 +24,4 @@ mongoose.connection.on("error", (error) => console.error(chalk.red(`MongoDB conn
 
 
 
-export default mongoose.connection;
+export default mongoose;
