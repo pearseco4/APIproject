@@ -1,8 +1,8 @@
+import db from "./db/connection.js"
 import express from "express";
 import cors from "cors";
 import logger from "morgan";
 import artworksRoute from "./routes/artworks.js";
-
 
 //create express application
 const app  = express()
@@ -15,6 +15,8 @@ app.use(logger("dev"));
 app.use("/artworks", artworksRoute);
 
 //
-app.listen(PORT, () => {
-process.env.NODE_ENV === "production" ? console.log(`Express server running in production on port ${PORT}\n\n`) : console.log(`Express server running in development on: ${PORT}`)
+db.on("connected", ()=>{
+    app.listen(PORT, () => {
+    process.env.NODE_ENV === "production" ? console.log(`Express server running in production on port ${PORT}\n\n`) : console.log(`Express server running in development on: ${PORT}`)
+    })
 })
