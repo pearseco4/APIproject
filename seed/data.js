@@ -9,6 +9,7 @@ const insertData = async () => {
     //insert Artworks into database
     await Artworks.insertMany(artworks);
 
+    // Close DB Connection
     db.close()
 };
 
